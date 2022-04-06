@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
 
-import Carousel, { CarouselItem } from './carousel';
+import Carousel, { CarouselItem } from '../components/carousel';
 
 // const photos = [
 //   {

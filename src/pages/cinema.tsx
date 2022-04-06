@@ -1,7 +1,7 @@
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
 
-import YoutubeEmbed from './youtubeEmbed';
+import YoutubeEmbed from '../components/youtubeEmbed';
 
 const Cinema = () => (
   <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
