@@ -20,21 +20,21 @@ const Main = (props: IMainProps) => (
         <div className="text-3xl font-bold text-gray-900">
           {AppConfig.title}
         </div>
-        <div className="text-xl">{AppConfig.description}</div>
+        {/* <div className="text-xl">{AppConfig.description}</div> */}
       </div>
-      <div>
+      <div className=" mb-2">
         <ul className="flex flex-wrap text-lg">
           <li className="mr-10 text-center">
             <Link href="/">
               <a className="border-none text-center text-gray-700 hover:text-gray-900">
-                Index
+                The photos
               </a>
             </Link>
           </li>
           <li className="mr-80 text-right">
             <Link href="/about/">
               <a className="border-none text-right text-gray-700 hover:text-gray-900">
-                About
+                The artist
               </a>
             </Link>
           </li>
@@ -44,7 +44,7 @@ const Main = (props: IMainProps) => (
 
       {/* Body of the App */}
 
-      <div className=" inset-full">{props.children}</div>
+      <div>{props.children}</div>
 
       {/* FOOTER  */}
       <div className=" border-gray-300 py-8 text-center text-sm">

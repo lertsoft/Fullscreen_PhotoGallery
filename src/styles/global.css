@@ -1,3 +1,4 @@
+/* Tailwind CSS classes and utilitis for easier CSS management and design. */
 @tailwind base;
 
 a {
@@ -7,6 +8,7 @@ a {
 a:hover {
   @apply border-b-2 border-blue-700;
 }
+
 
 @tailwind components;
 
@@ -19,8 +21,59 @@ a:hover {
 .content ul {
   @apply my-6;
 }
-
+/* This line is not being use or so i think */
 .image {
-  height: 99%;
   margin: 0;
 }
+
+/* Carousel CSS */
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* carousel buttons and indicators CSS */
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  text-color: red;
+  color: red;
+}
+
+/* Youtube embed style and responsiveness */
+video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 1rem/* 16px */;
+  margin-bottom: 1rem/* 16px */;
+  /* display: inline-flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+}
+
